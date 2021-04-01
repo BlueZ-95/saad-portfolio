@@ -11,7 +11,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          <a href='https://github.com/BlueZ-95'>Portfolio</a> Coming Soon!
+          <a href='https://github.com/BlueZ-95'> Portfolio</a> Coming Soon!
         </h1>
       </main>
     </div>
