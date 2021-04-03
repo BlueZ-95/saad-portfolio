@@ -2,10 +2,38 @@
 	height: 100vh;
 }
 
+.menuContainer {
+	height: 10%;
+}
+
+.headerLeftContent {
+	height: 80%;
+}
+
 .headerLeftContent h1 {
-	font-size: 5rem !important;
+	font-size: 8rem !important;
 }
 
 .headerLeftContent span {
 	font-size: 2.5rem !important;
+}
+
+.socialMediaLinks {
+	height: 10%;
+}
+
+.socialMediaLinks svg {
+	transition: .03s;
+}
+
+.socialMediaLinks svg:hover {
+	transform: scale(1.2);
+	cursor: pointer;
+	color: rgb(128, 128, 128);
+}
+
+@media only screen and (max-width: 600px) {
+	.headerContainer {
+		height: 200vh;
+	}
 }
