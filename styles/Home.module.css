@@ -11,7 +11,7 @@
 }
 
 .headerLeftContent h1 {
-	font-size: 8rem !important;
+	font-size: 7rem !important;
 }
 
 .headerLeftContent span {
@@ -24,12 +24,13 @@
 
 .socialMediaLinks svg {
 	transition: .03s;
+	color: rgb(83, 83, 83);
 }
 
 .socialMediaLinks svg:hover {
 	transform: scale(1.2);
 	cursor: pointer;
-	color: rgb(128, 128, 128);
+	color: black;
 }
 
 @media only screen and (max-width: 600px) {
