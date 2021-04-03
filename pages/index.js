@@ -12,7 +12,7 @@ export default function Home() {
 
       <header className={`${styles.headerContainer} container-fluid`}>
         <div className='row h-100'>
-          <div className='col-sm-5 flex-column p-0' style={{ maxHeight: '100vh' }}>
+          <div className='col-sm-5 flex-column p-0' style={{ maxHeight: '95vh' }}>
             <div className={`${styles.menuContainer} col d-flex align-items-start justify-content-between p-4`}>
               <h2 className="fw-bold">me.</h2>
               <h3>menu</h3>
