@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 import { FaInstagram, FaTwitter, FaLinkedinIn, FaGithub } from "react-icons/fa";
 
@@ -18,7 +19,7 @@ export default function Home() {
               <h3>menu</h3>
             </div>
             <div className={`${styles.headerLeftContent} col d-flex flex-column align-items-center justify-content-center`}>
-              <h1 className="fs-1 fw-bold">SAAD</h1><p>Developer based in Vadodara</p>
+              <h1 className="fs-1">I'm <b>SAAD</b></h1><p>Developer based in Vadodara</p>
             </div>
             <div className={`${styles.socialMediaLinks} col fs-4 d-flex align-items-center justify-content-evenly`}>
               <FaInstagram></FaInstagram>
@@ -28,10 +29,8 @@ export default function Home() {
             </div>
           </div>
           <div className='col-sm-7 flex-column p-0'>
-            <div className='h-75 bg-info'>Right-Top</div>
-            <div className='h-25'>
-              <div className='h-100 col-sm-6 d-inline-block bg-secondary'>Right-Bottom-Left</div>
-              <div className='h-100 col-sm-6 d-inline-block bg-dark'>Right-Bottom-Right</div>
+            <div className='h-100'>
+
             </div>
           </div>
         </div>

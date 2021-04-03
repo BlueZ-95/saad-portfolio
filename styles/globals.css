@@ -1,3 +1,5 @@
+/* https://dribbble.com/shots/11584903-Micael-Personal-CV-Resume-Site/attachments/3205935?mode=media */
+/* https://coolors.co/ffc15e-f7b05b-f7934c-cc5803-1f1300 */
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Yanone+Kaffeesatz&display=swap');
 
 html,
@@ -5,6 +7,7 @@ body {
 	padding: 0;
 	margin: 0;
 	font-family: 'Ubuntu', sans-serif;
+	background-color: #f2f4f9;
 }
 
 a {
