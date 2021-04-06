@@ -11,6 +11,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      {/* Header */}
       <header className={`${styles.headerContainer}`}>
         <div className="container-fluid h-100">
           <div className='row h-25 d-flex align-items-center'>
@@ -36,7 +37,7 @@ export default function Home() {
                   <h4>Hey,</h4>
                   <h1>I'm Saad</h1>
                   <p className={`${styles.headerPersonalInfo} fs-5`}>Freelancer <b>Web Developer</b>, also passionate in making beautiful <b>UI/UX</b> designs.</p>
-                  <button className='btn btn-primary btn-custom w-50 mt-3'>Hire Me</button>
+                  <button className='btn btn-primary btn-custom w-50 mt-3 shadow'>Hire Me</button>
                 </div>
               </div>
             </div>
@@ -46,6 +47,33 @@ export default function Home() {
           </div>
         </div>
       </header>
+
+      {/* Main */}
+      <main className={`${styles.mainContainer}`}>
+        <div className={`${styles.aboutMeContainer} container h-100`}>
+          {/* About Me */}
+          <div className="row h-50">
+            <div className='col-sm-10 offset-sm-1 d-flex shadow-sm'>
+              {/* <div className={`${styles.avatarContainer} w-25 h-25 shadow-lg`}></div> */}
+              <div className='col-sm-4'></div>
+              <div className='col-sm-8 d-flex flex-column'>
+                <h2>About me</h2>
+                <p>a web developer</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Skills */}
+          <div className="row h-50">
+            <div className='col-sm-8 offset-sm-2 d-flex shadow-sm'>
+              {/* <div className={`${styles.avatarContainer} w-25 h-25 shadow-lg`}></div> */}
+              <div className='d-flex flex-column'>
+                <h2 className='text-center'>About me</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
     </div>
   )
 }
