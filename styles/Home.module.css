@@ -1,40 +1,20 @@
 .headerContainer {
+	width: 100vw;
 	height: 100vh;
+	background: url('/headerSVG.svg');
+	background-repeat: no-repeat;
+	background-position-x: right;
 }
 
-.menuContainer {
-	height: 10%;
+.headerPersonalInfo b {
+	color: #714ade;
 }
 
-.headerLeftContent {
-	height: 80%;
-}
-
-.headerLeftContent h1 {
-	font-size: 5rem !important;
-}
-
-.headerLeftContent span {
-	font-size: 2.5rem !important;
-}
-
-.socialMediaLinks {
-	height: 10%;
-}
-
-.socialMediaLinks svg {
-	transition: .03s;
-	color: rgb(83, 83, 83);
-}
-
-.socialMediaLinks svg:hover {
-	transform: scale(1.2);
-	cursor: pointer;
-	color: black;
-}
-
-@media only screen and (max-width: 600px) {
-	.headerContainer {
-		height: 200vh;
-	}
+.avatarContainer {
+	border-radius: 50%;
+	background: url('/avatar.svg');
+	background-repeat: no-repeat;
+	background-position-x: right;
+	background-size: cover;
+	/* background-position-y: 50px; */
 }

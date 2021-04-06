@@ -1,5 +1,7 @@
-/* https://dribbble.com/shots/11584903-Micael-Personal-CV-Resume-Site/attachments/3205935?mode=media */
+/* https://www.uplabs.com/posts/wedgainer-portfolio-landing-page-web-ui-template */
+/* https://www.uplabs.com/posts/personal-portfolio-landing-page-7d4a4b79-7d99-4fc0-a716-a818f50af05b */
 /* https://coolors.co/ffc15e-f7b05b-f7934c-cc5803-1f1300 */
+
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Yanone+Kaffeesatz&display=swap');
 
 html,
@@ -7,7 +9,7 @@ body {
 	padding: 0;
 	margin: 0;
 	font-family: 'Ubuntu', sans-serif;
-	background-color: #f2f4f9;
+	background-color: white;
 }
 
 a {
@@ -17,4 +19,24 @@ a {
 
 * {
 	box-sizing: border-box;
+}
+
+.btn-custom {
+	background-color: #714ade;
+	border: none;
+	border-radius: 50px;
+	padding: 15px;
+	font-size: 1.2rem;
+}
+
+.btn-custom:hover {
+	background-color: #583aad;
+}
+
+ul {
+	list-style-type: none;
+}
+
+li {
+	text-align: center;
 }
