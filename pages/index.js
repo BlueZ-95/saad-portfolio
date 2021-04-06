@@ -50,13 +50,14 @@ export default function Home() {
 
       {/* Main */}
       <main className={`${styles.mainContainer}`}>
-        <div className={`${styles.aboutMeContainer} container h-100`}>
+        <div className='container h-100'>
           {/* About Me */}
-          <div className="row h-50">
-            <div className='col-sm-10 offset-sm-1 d-flex shadow-sm'>
-              {/* <div className={`${styles.avatarContainer} w-25 h-25 shadow-lg`}></div> */}
-              <div className='col-sm-4'></div>
-              <div className='col-sm-8 d-flex flex-column'>
+          <div className='row h-25'>
+            <div className={`${styles.aboutMeContainer} col-sm-10 offset-sm-1 d-flex`}>
+              <div className={`${styles.aboutMeImage} col-sm-4 rounded shadow-lg`}>
+                <Image src='/AboutMe.svg' width={128} height={128} layout='responsive' />
+              </div>
+              <div className='col-sm-6 offset-sm-2 d-flex flex-column align-items-start justify-content-start pt-5'>
                 <h2>About me</h2>
                 <p>a web developer</p>
               </div>
@@ -64,14 +65,6 @@ export default function Home() {
           </div>
 
           {/* Skills */}
-          <div className="row h-50">
-            <div className='col-sm-8 offset-sm-2 d-flex shadow-sm'>
-              {/* <div className={`${styles.avatarContainer} w-25 h-25 shadow-lg`}></div> */}
-              <div className='d-flex flex-column'>
-                <h2 className='text-center'>About me</h2>
-              </div>
-            </div>
-          </div>
         </div>
       </main>
     </div>
