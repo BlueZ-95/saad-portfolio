@@ -24,9 +24,9 @@
 
 /* main Content Css */
 .mainContainer {
-	width: 100%;
+	/* width: 100%;
 	height: 180vh;
-	min-height: 180vh;
+	min-height: 180vh; */
 	background: url("../public/mainContentBG.svg");
 	background-repeat: no-repeat;
 	/* background-position-x: start; */
@@ -36,8 +36,7 @@
 }
 
 .aboutMeImage {
-	background-color: white;
-	border-radius: 8px;
+	border-radius: 15px;
 }
 
 .aboutMeDesc {
