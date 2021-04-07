@@ -50,11 +50,3 @@ a {
 .btn-custom:hover {
 	background-color: #583aad;
 }
-
-ul {
-	list-style-type: none;
-}
-
-li {
-	text-align: center;
-}

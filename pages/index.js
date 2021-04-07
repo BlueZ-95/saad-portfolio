@@ -14,24 +14,24 @@ export default function Home() {
       {/* Header */}
       <header className={`${styles.headerContainer}`}>
         <div className="container-fluid h-100">
-          <div className='row h-25 d-flex align-items-center'>
-            <div className='col-sm-8 h-50'>
-              <ul className='col-sm-10 offset-sm-2 d-flex'>
-                <li className='col-sm-1'>Menu</li>
-                <li className='col-sm-1'>About</li>
-                <li className='col-sm-1'>Contact</li>
+          <div className='row p-3'>
+            <div className='col-sm-6 offset-sm-1'>
+              <ul className='list-inline'>
+                <li className='list-inline-item'>Menu</li>
+                <li className='list-inline-item'>About</li>
+                <li className='list-inline-item'>Contact</li>
               </ul>
             </div>
-            <div className='col-sm-4 h-50'>
-              <ul className='d-flex align-items-center justify-content-end'>
-                <li className='col-sm-2'>a</li>
-                <li className='col-sm-2'>b</li>
-                <li className='col-sm-2'>c</li>
+            <div className='col-sm-4 text-end'>
+              <ul className='list-inline'>
+                <li className='list-inline-item'>a</li>
+                <li className='list-inline-item'>b</li>
+                <li className='list-inline-item'>c</li>
               </ul>
             </div>
           </div>
-          <div className='row h-75 pt-5'>
-            <div className='col-sm-6 h-100 offset-sm-1 d-flex align-items-start justify-content-center'>
+          <div className='row pt-5'>
+            <div className='col-sm-6 pt-5 h-100 offset-sm-1 d-flex align-items-start justify-content-center'>
               <div className='d-flex flex-column align-items-start justify-content-start pt-5'>
                 <div className='w-75'>
                   <h4>Hey,</h4>
@@ -41,8 +41,8 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className='col-sm-4 offset-sm-1 p-0'>
-              <div className={`${styles.avatarContainer} w-75 h-75 shadow-lg`}></div>
+            <div className='col-sm-4 p-0 pt-5 offset-sm-1'>
+              <div className={`${styles.avatarContainer}  shadow-lg`}></div>
             </div>
           </div>
         </div>
@@ -53,12 +53,12 @@ export default function Home() {
         {/* About Me */}
         <div className='row justify-content-center'>
           {/* <div className={`${styles.aboutMeContainer} col-sm-12`}> */}
-          <div className={`${styles.aboutMeImage} col-sm-3 shadow-lg overflow-hidden p-0`}>
+          <div className={`${styles.aboutMeImage} col-sm-3 p-2`}>
             <Image src='/aboutMe.jpg' width={128} height={128} layout='responsive' objectFit='fill' />
           </div>
           <div className='col-sm-5 offset-sm-1 pt-2'>
             <h2 className='fs-1 fw-bold'>About me</h2>
-            <ul className="nav nav-pills flex-column flex-sm-row mb-3 mt-3" id="pills-tab" role="tablist">
+            <ul className="nav nav-pills mb-3 mt-3" id="pills-tab" role="tablist">
               <li className="nav-item" role="presentation">
                 <button className="nav-link flex-sm-fill active" id="pills-life-tab" data-bs-toggle="pill" data-bs-target="#pills-life" type="button" role="tab" aria-controls="pills-life" aria-selected="true">Life</button>
               </li>
@@ -93,7 +93,7 @@ export default function Home() {
         </div>
 
         {/* Skills */}
-        <div className='mt-5 pt-5'>
+        <div className={`mt-5 pt-5`}>
           <div className='row'>
             <p className='col fs-4 text-center text-secondary'>Skills</p>
           </div>
@@ -103,7 +103,7 @@ export default function Home() {
           <div className='row'>
             <p className='col pt-3 fs-5 text-center text-secondary'>Following are the some of the expertise containing development and SEO.</p>
           </div>
-          <div className='row justify-content-center p-3 pt-5'>
+          <div className={`${styles.skillsContainer} row justify-content-center p-3 pt-5`}>
             <div className="card col-sm-3 text-center shadow-lg m-4">
               <div className="card-body">
                 <Image src='/ui-design.svg' width={128} height={128} />
