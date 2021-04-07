@@ -26,6 +26,7 @@
 .mainContainer {
 	width: 100%;
 	height: 180vh;
+	min-height: 180vh;
 	background: url("../public/mainContentBG.svg");
 	background-repeat: no-repeat;
 	/* background-position-x: start; */

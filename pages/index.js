@@ -37,7 +37,7 @@ export default function Home() {
                   <h4>Hey,</h4>
                   <h1 className='fw-bold'>I'm Saad</h1>
                   <p className={`${styles.headerPersonalInfo} fs-5`}>Freelancer <b>Web Developer</b>, also passionate in making beautiful <b>UI/UX</b> designs.</p>
-                  <button className='btn btn-primary btn-custom w-50 mt-3 shadow'>Hire Me</button>
+                  <button className='btn btn-primary btn-custom w-50 mt-3 shadow-lg'>Hire Me</button>
                 </div>
               </div>
             </div>
