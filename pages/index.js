@@ -31,11 +31,11 @@ export default function Home() {
             </div>
           </div>
           <div className='row h-75 pt-5'>
-            <div className='col-sm-6 offset-sm-1 d-flex align-items-start justify-content-center'>
+            <div className='col-sm-6 h-100 offset-sm-1 d-flex align-items-start justify-content-center'>
               <div className='d-flex flex-column align-items-start justify-content-start pt-5'>
                 <div className='w-75'>
                   <h4>Hey,</h4>
-                  <h1>I'm Saad</h1>
+                  <h1 className='fw-bold'>I'm Saad</h1>
                   <p className={`${styles.headerPersonalInfo} fs-5`}>Freelancer <b>Web Developer</b>, also passionate in making beautiful <b>UI/UX</b> designs.</p>
                   <button className='btn btn-primary btn-custom w-50 mt-3 shadow'>Hire Me</button>
                 </div>
