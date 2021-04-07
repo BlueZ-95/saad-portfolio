@@ -1,42 +1,53 @@
 /* Header Css */
 .headerContainer {
-  width: 100%;
-  height: 100vh;
-  background: url("../public/HeaderSVG.svg");
-  background-repeat: no-repeat;
-  background-position-x: right;
+	width: 100%;
+	height: 100vh;
+	background: url("../public/HeaderSVG.svg");
+	background-repeat: no-repeat;
+	background-position-x: right;
 }
 
 .headerPersonalInfo b {
-  color: #714ade;
+	color: #714ade;
 }
 
 .avatarContainer {
-  border-radius: 50%;
-  background: url("../public/avatar.svg");
-  background-repeat: no-repeat;
-  background-position-x: right;
-  background-size: cover;
-  cursor: pointer;
+	border-radius: 50%;
+	background: url("../public/avatar.svg");
+	background-repeat: no-repeat;
+	background-position-x: right;
+	background-size: cover;
+	cursor: pointer;
 }
 
 /* main Content Css */
 .mainContainer {
-  width: 100%;
-  height: 180vh;
-  background: url("../public/mainContentBG.svg");
-  background-repeat: no-repeat;
-  background-position-y: center;
-  padding-top: 20%;
-}
-
-.aboutMeContainer {
-  /* background-color: white; */
+	width: 100%;
+	height: 180vh;
+	background: url("../public/mainContentBG.svg");
+	background-repeat: no-repeat;
+	/* background-position-x: start; */
+	background-position-y: center;
+	background-size: contain;
+	padding-top: 10%;
 }
 
 .aboutMeImage {
-  background-color: white;
+	background-color: white;
+	border-radius: 8px;
 }
 
-.skillsContainer {
+.aboutMeDesc {
+	font-size: 1.2rem;
+	color: #495057;
+	padding-left: 5px;
+}
+
+.expertiseContainer > div {
+	border-radius: 20px !important;
+	border: none;
+	cursor: pointer;
+}
+
+.expertiseContainer h3 {
 }
