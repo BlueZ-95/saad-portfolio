@@ -50,3 +50,9 @@ a {
 .btn-custom:hover {
 	background-color: #583aad;
 }
+
+form {
+	background-color: gainsboro;
+	border-radius: 8px;
+	width: 40% !important;
+}

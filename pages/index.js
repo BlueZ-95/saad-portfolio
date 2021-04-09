@@ -128,6 +128,30 @@ export default function Home() {
           </div>
         </div>
       </main>
+
+      {/* Contact Me */}
+      <div className={`${styles.contactMe}`}>
+        <form className='container-fluid'>
+          <div class="row justify-content-center mb-3">
+            <div className='col-sm-4'>
+              <label for="name" class="form-label">Name :</label>
+              <input type="text" class="form-control col-sm-4" id="name" placeholder="Your Name" />
+            </div>
+          </div>
+          <div class="row justify-content-center mb-3">
+            <div className='col-sm-4'>
+              <label for="email" class="form-label ">Email :</label>
+              <input type="email" class="form-control col-sm-3" id="email" placeholder="Your Email" />
+            </div>
+          </div>
+          <div class="row justify-content-center mb-3">
+            <div className='col-sm-4'>
+              <label for="message" class="form-label">Message :</label>
+              <textarea class="form-control col-sm-4" id="message" rows="3" placeholder="Your Message"></textarea>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
   )
 }

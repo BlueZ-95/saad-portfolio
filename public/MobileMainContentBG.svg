@@ -1,25 +1,18 @@
-<svg width="375" height="161" viewBox="0 0 375 161" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="375" height="150" viewBox="0 0 375 150" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="MobileMainContentBG">
-<rect id="Rectangle 4" width="375" height="161" fill="#714ADE"/>
-<g id="Group 1">
-<rect id="Rectangle 3" width="9.20282" height="9.20282" rx="2" transform="matrix(0.805157 -0.593062 0.805157 0.593062 313 95.5422)" fill="#BDAAF5" fill-opacity="0.5"/>
-<rect id="Rectangle 2" width="11.5035" height="11.5035" rx="2" transform="matrix(0.805157 -0.593062 0.805157 0.593062 347.476 79.5635)" fill="#BDAAF5" fill-opacity="0.5"/>
-<rect id="Rectangle 1" width="16.1049" height="16.1049" rx="2" transform="matrix(-0.805157 -0.593062 0.805157 -0.593062 328.53 67.4025)" fill="#BDAAF5" fill-opacity="0.25"/>
-</g>
+<rect id="Rectangle 4" width="375" height="150" fill="#714ADE"/>
 <g id="Group 2">
 <g id="R3">
-<path id="R3BLine" d="M18 161L18 78.2" stroke="white" stroke-opacity="0.23"/>
-<path id="R3TLine" d="M18 70.5333L18 -9.94452e-06" stroke="white" stroke-opacity="0.23"/>
-<rect id="Rectangle 3_2" width="9.57066" height="9.61106" rx="2" transform="matrix(0.877475 0.479623 0.877475 -0.479623 9.60193 74.3763)" fill="#412887" fill-opacity="0.25"/>
+<path id="R3BLine" d="M18 150L18 72.8571" stroke="white" stroke-opacity="0.23"/>
+<path id="R3TLine" d="M18 66L18 -2.70907e-08" stroke="white" stroke-opacity="0.23"/>
+<rect id="Rectangle 3" width="9.42426" height="9.46404" rx="2" transform="matrix(0.891106 0.453795 0.891106 -0.453795 9.60193 69.2948)" fill="#412887" fill-opacity="0.25"/>
 </g>
-<path id="R2TLine" d="M82 102.733L82 7.86604e-06" stroke="white" stroke-opacity="0.23"/>
-<path id="R2TLine_2" d="M49 26.8333L49 -5.22476e-06" stroke="white" stroke-opacity="0.23"/>
-<path id="R2TLine_3" d="M49 128.033L49 46" stroke="white" stroke-opacity="0.23"/>
-<path id="R2TLine_4" d="M49 161L49 147.2" stroke="white" stroke-opacity="0.23"/>
-<path id="R2TLine_5" d="M82 161L82 116.533" stroke="white" stroke-opacity="0.23"/>
-<rect id="Rectangle 2_2" width="15.8654" height="15.8875" rx="2" transform="matrix(0.877475 0.479623 0.877475 -0.479623 68.0591 109.587)" fill="#4C26B8" fill-opacity="0.25"/>
-<rect id="Rectangle 1_2" width="21.6397" height="21.519" rx="2" transform="matrix(-0.877475 0.479623 0.877475 0.479623 48.9883 127.267)" fill="#5D34D2" fill-opacity="0.5"/>
-<rect id="Rectangle 3_3" width="21.6391" height="21.5198" rx="2" transform="matrix(-0.877475 0.479623 0.877475 0.479623 49.1047 26.0667)" fill="#5D34D2" fill-opacity="0.5"/>
+<path id="R2TLine" d="M82 96L82 -3.31766e-06" stroke="white" stroke-opacity="0.23"/>
+<path id="R2TLine_2" d="M49 120L49 1.26205e-06" stroke="white" stroke-opacity="0.23"/>
+<path id="R2TLine_3" d="M49 150L49 137.143" stroke="white" stroke-opacity="0.23"/>
+<path id="R2TLine_4" d="M82 150L82 108.571" stroke="white" stroke-opacity="0.23"/>
+<rect id="Rectangle 2" width="15.6227" height="15.6445" rx="2" transform="matrix(0.891106 0.453795 0.891106 -0.453795 68.0591 102.099)" fill="#4C26B8" fill-opacity="0.25"/>
+<rect id="Rectangle 1" width="21.3086" height="21.1899" rx="2" transform="matrix(-0.891106 0.453795 0.891106 0.453795 48.9883 118.571)" fill="#5D34D2" fill-opacity="0.5"/>
 </g>
 </g>
 </svg>
