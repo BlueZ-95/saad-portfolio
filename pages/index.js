@@ -15,47 +15,41 @@ export default function Home() {
       <header className={`${styles.headerContainer}`}>
         <div className="container-fluid h-100">
           <div className='row p-3'>
-            <div className='col-sm-6 offset-sm-1'>
-              <ul className='list-inline'>
-                <li className='list-inline-item'>Menu</li>
-                <li className='list-inline-item'>About</li>
-                <li className='list-inline-item'>Contact</li>
-              </ul>
-            </div>
-            <div className='col-sm-3 mr-0 offset-sm-2 d-flex align-items-center justify-content-evenly'>
-              <span>
-                <a href='https://www.instagram.com/i.am_saad_' target='blank'>
-                  <FiInstagram />
-                </a>
-              </span>
-              <span>
-                <a href='https://twitter.com/SaadPatel73' target='blank'>
-                  <FiTwitter />
-                </a>
-              </span>
-              <span>
-                <a href='https://github.com/BlueZ-95' target='blank'>
-                  <FiGithub />
-                </a>
-              </span>
-              <span>
-                <a href='https://www.linkedin.com/in/saad-patel-b32b87187/' target='blank'>
-                  <FiLinkedin />
-                </a>
-              </span>
-            </div>
+            <div className='col-sm-2 offset-sm-1 fw-bold fs-3'><p>me.</p></div>
           </div>
           <div className='row pt-5'>
             <div className={`${styles.mobileAvatarCol} p-0 pt-5`}>
               <div className={`${styles.mobileAvatarContainer} shadow-lg`}></div>
             </div>
-            <div className='col-sm-6 pt-5 h-100 offset-sm-1 d-flex align-items-start justify-content-center'>
+            <div className='col-sm-6 pt-5 h-100 d-flex align-items-start justify-content-center'>
               <div className='d-flex flex-column align-items-start justify-content-start pt-5'>
-                <div className='w-75'>
+                <div className=''>
                   <h4>Hey,</h4>
                   <h1 className='fw-bold'>I'm Saad</h1>
-                  <p className={`${styles.headerPersonalInfo} fs-5`}>Freelancer <b>Web Developer</b>, also passionate in making beautiful <b>UI/UX</b> designs.</p>
+                  <p className={`${styles.headerPersonalInfo} fs-5`}>Freelancer <b>Web Developer</b> <br /> passionate in making beautiful <b>UI/UX</b> designs.</p>
                   <button className='btn btn-primary btn-custom w-75 mt-4 mb-5 shadow-lg'>Hire Me</button>
+                  <div className='col-sm-8 d-flex align-items-center justify-content-between'>
+                    <span>
+                      <a href='https://www.instagram.com/i.am_saad_' target='blank'>
+                        <FiInstagram />
+                      </a>
+                    </span>
+                    <span>
+                      <a href='https://twitter.com/SaadPatel73' target='blank'>
+                        <FiTwitter />
+                      </a>
+                    </span>
+                    <span>
+                      <a href='https://github.com/BlueZ-95' target='blank'>
+                        <FiGithub />
+                      </a>
+                    </span>
+                    <span>
+                      <a href='https://www.linkedin.com/in/saad-patel-b32b87187/' target='blank'>
+                        <FiLinkedin />
+                      </a>
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
