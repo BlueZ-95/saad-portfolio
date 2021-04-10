@@ -4,6 +4,7 @@
 /* https://www.flaticon.com/authors/special-ungravity/lineal-color */
 /* https://www.flaticon.com/packs/web-development-79 */
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Yanone+Kaffeesatz&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;500&display=swap');
 
 html,
 body {
@@ -39,6 +40,10 @@ a {
 	box-sizing: border-box;
 }
 
+a {
+	text-decoration: none;
+}
+
 .btn-custom {
 	background-color: #714ade;
 	border: none;
@@ -51,8 +56,46 @@ a {
 	background-color: #583aad;
 }
 
-form {
-	background-color: gainsboro;
-	border-radius: 8px;
-	width: 40% !important;
+footer p {
+	cursor: pointer;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+	background-color: #714ade !important;
+}
+
+footer span,
+header span {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: 0.25s;
+}
+
+header span {
+	background-color: transparent;
+	color: white;
+	border: 1px solid white;
+}
+
+footer span {
+	background-color: #714ade;
+	color: white;
+}
+
+header span:hover {
+	background-color: white;
+	color: #714ade;
+}
+
+footer span:hover {
+	background-color: transparent;
+	border: 1px solid #714ade;
+	color: #714ade;
+	box-shadow: 0 1rem 3rem rgb(0 0 0 / 18%);
 }

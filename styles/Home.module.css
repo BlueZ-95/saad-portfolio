@@ -13,9 +13,24 @@
 	color: #714ade;
 }
 
+.mobileAvatarCol {
+	display: none;
+}
+
+.mobileAvatarContainer {
+	height: 250px;
+	width: 250px;
+	border-radius: 50%;
+	background: url("../public/avatar.svg");
+	background-repeat: no-repeat;
+	background-position-x: right;
+	background-size: contain;
+	cursor: pointer;
+}
+
 .avatarContainer {
-	height: 400px;
-	width: 400px;
+	height: 500px;
+	width: 500px;
 	border-radius: 50%;
 	background: url("../public/avatar.svg");
 	background-repeat: no-repeat;
@@ -33,39 +48,35 @@
 	padding-top: 10%;
 }
 
-.aboutMeImage > div {
-	border-radius: 15px;
-	/* box-shadow: #495057; */
-}
-
 .aboutMeDesc {
 	font-size: 1.2rem;
 	color: #495057;
 	padding-left: 5px;
 }
 
-.expertiseContainer > div {
+.skillsContainer > div {
 	border-radius: 20px !important;
+	height: 350px;
 	border: none;
 	cursor: pointer;
-}
-
-.expertiseContainer h3 {
-}
-
-/* contact me css */
-.contactMe {
-	background: url("../public/ContactMe.svg");
-	background-repeat: no-repeat;
-	background-position-y: center;
-	background-size: contain;
-	background-position: right;
-	padding-top: 10%;
+	font-family: 'Dosis', sans-serif;
 }
 
 @media (max-width: 767.98px) {
-	.avatarContainer {
+	.headerContainer {
+		height: 50vh;
+	}
+
+	.avatarContainerCol {
 		display: none;
+	}
+
+	.mobileAvatarCol {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding-top: 0 !important;
+		padding-right: 20px !important;
 	}
 
 	.mainContainer {
@@ -74,7 +85,5 @@
 
 	.skillsContainer {
 		background: #714ade;
-		/* background-size: contain;
-    background-repeat: repeat; */
 	}
 }

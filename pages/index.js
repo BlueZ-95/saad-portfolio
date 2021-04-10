@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
-import { FaInstagram, FaTwitter, FaLinkedinIn, FaGithub } from "react-icons/fa";
+import { FiInstagram, FiTwitter, FiGithub, FiLinkedin } from "react-icons/fi";
 
 export default function Home() {
   return (
@@ -22,43 +22,63 @@ export default function Home() {
                 <li className='list-inline-item'>Contact</li>
               </ul>
             </div>
-            <div className='col-sm-4 text-end'>
-              <ul className='list-inline'>
-                <li className='list-inline-item'>a</li>
-                <li className='list-inline-item'>b</li>
-                <li className='list-inline-item'>c</li>
-              </ul>
+            <div className='col-sm-3 mr-0 offset-sm-2 d-flex align-items-center justify-content-evenly'>
+              <span>
+                <a href='https://www.instagram.com/i.am_saad_' target='blank'>
+                  <FiInstagram />
+                </a>
+              </span>
+              <span>
+                <a href='https://twitter.com/SaadPatel73' target='blank'>
+                  <FiTwitter />
+                </a>
+              </span>
+              <span>
+                <a href='https://github.com/BlueZ-95' target='blank'>
+                  <FiGithub />
+                </a>
+              </span>
+              <span>
+                <a href='https://www.linkedin.com/in/saad-patel-b32b87187/' target='blank'>
+                  <FiLinkedin />
+                </a>
+              </span>
             </div>
           </div>
           <div className='row pt-5'>
+            <div className={`${styles.mobileAvatarCol} p-0 pt-5`}>
+              <div className={`${styles.mobileAvatarContainer} shadow-lg`}></div>
+            </div>
             <div className='col-sm-6 pt-5 h-100 offset-sm-1 d-flex align-items-start justify-content-center'>
               <div className='d-flex flex-column align-items-start justify-content-start pt-5'>
                 <div className='w-75'>
                   <h4>Hey,</h4>
                   <h1 className='fw-bold'>I'm Saad</h1>
                   <p className={`${styles.headerPersonalInfo} fs-5`}>Freelancer <b>Web Developer</b>, also passionate in making beautiful <b>UI/UX</b> designs.</p>
-                  <button className='btn btn-primary btn-custom w-50 mt-3 shadow-lg'>Hire Me</button>
+                  <button className='btn btn-primary btn-custom w-75 mt-4 mb-5 shadow-lg'>Hire Me</button>
                 </div>
               </div>
             </div>
-            <div className='col-sm-4 p-0 pt-5 offset-sm-1'>
-              <div className={`${styles.avatarContainer}  shadow-lg`}></div>
+            <div className={`${styles.avatarContainerCol} col-sm-4 p-0 pt-5 offset-sm-1`}>
+              <div className={`${styles.avatarContainer} shadow-lg`}></div>
             </div>
           </div>
         </div>
       </header>
 
       {/* Main */}
-      <main className={`${styles.mainContainer} container-fluid`}>
+      <main className={`${styles.mainContainer} container-fluid pt-5`}>
         {/* About Me */}
+        <div className='row justify-content-center'>
+          <p className='col text-center fs-4 text-secondary'>About me</p>
+        </div>
         <div className='row justify-content-center'>
           {/* <div className={`${styles.aboutMeContainer} col-sm-12`}> */}
           <div className={`${styles.aboutMeImage} col-sm-3 p-2`}>
-            <Image src='/aboutMe.jpg' width={128} height={128} layout='responsive' objectFit='fill' />
+            <Image src='/aboutMe.svg' width={128} height={128} layout='responsive' objectFit='fill' />
           </div>
-          <div className='col-sm-5 offset-sm-1 pt-2'>
-            <h2 className='fs-1 fw-bold'>About me</h2>
-            <ul className="nav nav-pills mb-3 mt-3" id="pills-tab" role="tablist">
+          <div className='col-sm-5 offset-sm-1 pt-5'>
+            <ul className="nav nav-pills mb-3 mt-4" id="pills-tab" role="tablist">
               <li className="nav-item" role="presentation">
                 <button className="nav-link flex-sm-fill active" id="pills-life-tab" data-bs-toggle="pill" data-bs-target="#pills-life" type="button" role="tab" aria-controls="pills-life" aria-selected="true">Life</button>
               </li>
@@ -78,7 +98,7 @@ export default function Home() {
               </div>
               <div className="tab-pane fade" id="pills-education" role="tabpanel" aria-labelledby="pills-education-tab">
                 <p className={`${styles.aboutMeDesc}`}>
-                  I've completed my graduation degree in B.Com. Having sole interest in coding I've pursued my post-graduation degree in Master of Computer Applications <b>(MCA)</b>. I've knowledge of various in demand web technologies.
+                  I've completed my graduation degree in B.Com. Having sole interest in coding I've pursued my post-graduation degree in Master of Computer Applications <b>(MCA)</b>.
                     </p>
               </div>
               <div className="tab-pane fade" id="pills-experience" role="tabpanel" aria-labelledby="pills-experience-tab">
@@ -87,7 +107,7 @@ export default function Home() {
                     </p>
               </div>
             </div>
-            <button className='btn btn-primary btn-custom w-50 mt-3 shadow'>Download CV</button>
+            <a href='/SAAD PATEL RESUME.docx.pdf' className='btn btn-primary btn-custom w-50 mt-3 shadow' download>Download CV</a>
           </div>
           {/* </div> */}
         </div>
@@ -101,24 +121,24 @@ export default function Home() {
             <h2 className='col pt-3 fw-bold fs-1 text-center'>Expertise</h2>
           </div>
           <div className='row'>
-            <p className='col pt-3 fs-5 text-center text-secondary'>Following are the some of the expertise containing development and SEO.</p>
+            <p className='col pt-3 fs-5 text-center'>Following are the some of the expertise containing development and SEO.</p>
           </div>
           <div className={`${styles.skillsContainer} row justify-content-center p-3 pt-5`}>
-            <div className="card col-sm-3 text-center shadow-lg m-4">
+            <div className="card col-sm-3 text-center shadow-lg m-4" style={{ borderRadius: '15px' }}>
               <div className="card-body">
                 <Image src='/ui-design.svg' width={128} height={128} />
                 <h3 className='fs-3 fw-bold pt-2 pb-2'>UI/UX Design</h3>
                 <p className='fs-6 text-secondary'>I've been exposed to various design technologies i.e Figma, Frammer. I can develop entire user-interface from scratch as per the requirement.</p>
               </div>
             </div>
-            <div className="card col-sm-3 text-center shadow-lg m-4">
+            <div className="card col-sm-3 text-center shadow-lg m-4" style={{ borderRadius: '15px' }}>
               <div className="card-body">
                 <Image src='/web-development.svg' width={128} height={128} />
                 <h3 className='fs-3 fw-bold pt-2 pb-2'>Web Development</h3>
                 <p className='fs-6 text-secondary'>I've developed applications using variuos front-end technologies as well as back-end technologies i.e ReactJs, NextJs, VueJs, ASP.Net, NodeJs etc.</p>
               </div>
             </div>
-            <div className="card col-sm-3 text-center shadow-lg m-4">
+            <div className="card col-sm-3 text-center shadow-lg m-4" style={{ borderRadius: '15px' }}>
               <div className="card-body">
                 <Image src='/local-seo.svg' width={128} height={128} />
                 <h3 className='fs-3 fw-bold pt-2 pb-2'>Local SEO</h3>
@@ -127,31 +147,43 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </main>
 
-      {/* Contact Me */}
-      <div className={`${styles.contactMe}`}>
-        <form className='container-fluid'>
-          <div class="row justify-content-center mb-3">
-            <div className='col-sm-4'>
-              <label for="name" class="form-label">Name :</label>
-              <input type="text" class="form-control col-sm-4" id="name" placeholder="Your Name" />
+        {/* Footer */}
+        <footer className='container p-3'>
+          <div className='row justify-content-center'>
+            <div className='col-sm-4 text-center d-flex align-items-center justify-content-evenly text-secondary'>
+              <p>Home</p>
+              <p>About</p>
+              <p>Skills</p>
+              <p>Contact</p>
             </div>
           </div>
-          <div class="row justify-content-center mb-3">
-            <div className='col-sm-4'>
-              <label for="email" class="form-label ">Email :</label>
-              <input type="email" class="form-control col-sm-3" id="email" placeholder="Your Email" />
+          <div className='row justify-content-center'>
+            <div className='col-sm-3 text-center fs-4 d-flex align-items-center justify-content-evenly'>
+              <span>
+                <a href='https://www.instagram.com/i.am_saad_' target='blank'>
+                  <FiInstagram />
+                </a>
+              </span>
+              <span>
+                <a href='https://twitter.com/SaadPatel73' target='blank'>
+                  <FiTwitter />
+                </a>
+              </span>
+              <span>
+                <a href='https://github.com/BlueZ-95' target='blank'>
+                  <FiGithub />
+                </a>
+              </span>
+              <span>
+                <a href='https://www.linkedin.com/in/saad-patel-b32b87187/' target='blank'>
+                  <FiLinkedin />
+                </a>
+              </span>
             </div>
           </div>
-          <div class="row justify-content-center mb-3">
-            <div className='col-sm-4'>
-              <label for="message" class="form-label">Message :</label>
-              <textarea class="form-control col-sm-4" id="message" rows="3" placeholder="Your Message"></textarea>
-            </div>
-          </div>
-        </form>
-      </div>
+        </footer>
+      </main>
     </div>
   )
 }
