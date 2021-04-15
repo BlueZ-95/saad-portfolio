@@ -13,7 +13,7 @@ export default function Home() {
       </Head>
 
       {/* Header */}
-      <header className={`${styles.headerContainer}`}>
+      <header id='header' className={`${styles.headerContainer}`}>
         <div className="container-fluid h-100">
           <div className='row p-3'>
             <div className='col-sm-2 offset-sm-1 fw-bold fs-3'><p>me.</p></div>
@@ -64,7 +64,7 @@ export default function Home() {
       {/* Main */}
       <main className={`${styles.mainContainer} container-fluid pt-5`}>
         {/* About Me */}
-        <div className='row justify-content-center'>
+        <div id="about" className='row justify-content-center'>
           <p className='col text-center fs-4 text-secondary'>About me</p>
         </div>
         <div className='row justify-content-center'>
@@ -108,7 +108,7 @@ export default function Home() {
         </div>
 
         {/* Skills */}
-        <div className={`mt-5 pt-5`}>
+        <div id="skills" className={`mt-5 pt-5`}>
           <div className='row'>
             <p className='col fs-4 text-center text-secondary'>Skills</p>
           </div>
@@ -174,11 +174,11 @@ export default function Home() {
         {/* Footer */}
         <footer className='container p-3 mt-5'>
           <div className='row justify-content-center'>
-            <div className='col-sm-4 text-center d-flex align-items-center justify-content-evenly text-secondary'>
-              <p>Home</p>
-              <p>About</p>
-              <p>Skills</p>
-              <p>Contact</p>
+            <div className='col-sm-4 text-center d-flex align-items-center justify-content-evenly text-secondary p-4'>
+              <a href='#header'>Home</a>
+              <a href='#about'>About</a>
+              <a href='#skills'>Skills</a>
+              <a href='#contact'>Contact</a>
             </div>
           </div>
           <div className='row justify-content-center'>

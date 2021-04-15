@@ -62,11 +62,11 @@ a:hover {
 	box-shadow: 0 0 8px #583aad;
 }
 
-footer p {
+footer a {
 	cursor: pointer;
 }
 
-footer p:hover {
+footer a:hover {
 	color: #583aad;
 	transition: 0.1s;
 }
