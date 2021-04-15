@@ -27,8 +27,8 @@ export default function Home() {
                   <h4>Hey,</h4>
                   <h1 className='fw-bold'>I'm Saad</h1>
                   <p className={`${styles.headerPersonalInfo} fs-5`}>Freelancer <b>Web Developer</b> <br /> passionate in making beautiful <b>UI/UX</b> designs.</p>
-                  <button className='btn btn-primary btn-custom w-75 mt-4 mb-5 shadow-lg'>Hire Me</button>
-                  <div className='col-sm-8 d-flex align-items-center justify-content-between'>
+                  <button className='btn btn-primary btn-custom p-3 w-75 mt-4 mb-5 shadow-lg'>Hire Me</button>
+                  <div className={`${styles.headerSocialLinks} col-sm-8 d-flex align-items-center justify-content-between`}>
                     <span>
                       <a href='https://www.instagram.com/i.am_saad_' target='blank'>
                         <FiInstagram />
@@ -101,7 +101,7 @@ export default function Home() {
                     </p>
               </div>
             </div>
-            <a href='/SAAD PATEL RESUME.docx.pdf' className='btn btn-primary btn-custom w-50 mt-3 shadow' download>Download CV</a>
+            <a href='/SAAD PATEL RESUME.docx.pdf' className='btn btn-primary btn-custom p-3 w-50 mt-3 shadow' download>Download CV</a>
           </div>
           {/* </div> */}
         </div>
@@ -141,9 +141,37 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </main>
+
+      {/* Contact Me */}
+      <div className='container-fluid mt-5 pt-5'>
+        <div className='row justify-content-center'>
+          <form className='col-sm-4 offset-sm-1 shadow-sm p-4 bg-white'>
+            <p className='fs-4 text-center fw-bold'>Contact me for any query</p>
+            <div className="form-group p-3">
+              <input type="text" className="form-control" id="name" placeholder="Your Name" required="" />
+            </div>
+            <div className="form-group p-3">
+              <input type="email" className="form-control" id="email" placeholder="Your Email" required="" />
+            </div>
+
+            <div className="form-group p-3">
+              <input type="text" className="form-control" id="phone" maxLength="10" placeholder="Your Mobile No." required="" />
+            </div>
+            <div className="form-group p-3">
+              <textarea className="form-control textarea-contact" rows="5" id="comment" name="FB" placeholder="Type Your Message Here..." required="" />
+            </div>
+            <div className="form-group p-3">
+              <button className='btn btn-primary btn-custom w-100 float-end mt-3 mb-2 p-3'>Send Message</button>
+            </div>
+          </form>
+          <div className={`${styles.contactMeImage} col-sm-4 offset-sm-1`}>
+            <Image src='/contactme.svg' width={500} height={500}></Image>
+          </div>
+        </div>
 
         {/* Footer */}
-        <footer className='container p-3'>
+        <footer className='container p-3 mt-5'>
           <div className='row justify-content-center'>
             <div className='col-sm-4 text-center d-flex align-items-center justify-content-evenly text-secondary'>
               <p>Home</p>
@@ -177,7 +205,7 @@ export default function Home() {
             </div>
           </div>
         </footer>
-      </main>
-    </div>
+      </div>
+    </div >
   )
 }

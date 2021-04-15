@@ -48,7 +48,7 @@ a:hover {
 	background-color: #714ade;
 	border: none;
 	border-radius: 12px;
-	padding: 18px;
+	/* padding: 0px; */
 	font-size: 1.2rem;
 }
 
@@ -56,8 +56,20 @@ a:hover {
 	background-color: #583aad;
 }
 
+.form-control:focus {
+	border-color: #714add;
+	outline: none !important;
+	box-shadow: 0 0 8px #583aad;
+}
+
 footer p {
 	cursor: pointer;
+}
+
+footer p:hover {
+	color: #583aad;
+	transform: scale(1.2);
+	transition: 0.1s;
 }
 
 .nav-pills .nav-link.active,
