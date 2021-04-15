@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 import { FiInstagram, FiTwitter, FiGithub, FiLinkedin } from "react-icons/fi";
-import { FaCode, FaPaperPlane, FaDownload } from "react-icons/fa";
+import { FaPaperPlane, FaDownload } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -10,6 +10,7 @@ export default function Home() {
       <Head>
         <title>Saad Portfolio</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta name="description" content="This is Saad Patel's portfolio"></meta>
       </Head>
 
       {/* Header */}
@@ -70,7 +71,7 @@ export default function Home() {
         <div className='row justify-content-center'>
           {/* <div className={`${styles.aboutMeContainer} col-sm-12`}> */}
           <div className={`${styles.aboutMeImage} col-sm-3 p-2`}>
-            <Image src='/aboutMe.svg' width={128} height={128} layout='responsive' objectFit='fill' />
+            <Image src='/aboutMe.svg' width={128} height={128} layout='responsive' objectFit='fill' alt='About Me' />
           </div>
           <div className='col-sm-5 offset-sm-1 pt-5'>
             <ul className="nav nav-pills mb-3 mt-4" id="pills-tab" role="tablist">
@@ -121,21 +122,21 @@ export default function Home() {
           <div className={`${styles.skillsContainer} row justify-content-center p-3 pt-5`}>
             <div className="card col-sm-3 text-center shadow-lg m-4" style={{ borderRadius: '15px' }}>
               <div className="card-body">
-                <Image src='/ui-design.svg' width={128} height={128} />
+                <Image src='/ui-design.svg' width={128} height={128} alt='UI Design' />
                 <h3 className='fs-3 fw-bold pt-2 pb-2'>UI/UX Design</h3>
                 <p className='fs-6 text-secondary'>I've been exposed to various design technologies i.e Figma, Frammer. I can develop entire user-interface from scratch as per the requirement.</p>
               </div>
             </div>
             <div className="card col-sm-3 text-center shadow-lg m-4" style={{ borderRadius: '15px' }}>
               <div className="card-body">
-                <Image src='/web-development.svg' width={128} height={128} />
+                <Image src='/web-development.svg' width={128} height={128} alt='Web Development' />
                 <h3 className='fs-3 fw-bold pt-2 pb-2'>Web Development</h3>
                 <p className='fs-6 text-secondary'>I've developed applications using variuos front-end technologies as well as back-end technologies i.e ReactJs, NextJs, VueJs, ASP.Net, NodeJs etc.</p>
               </div>
             </div>
             <div className="card col-sm-3 text-center shadow-lg m-4" style={{ borderRadius: '15px' }}>
               <div className="card-body">
-                <Image src='/local-seo.svg' width={128} height={128} />
+                <Image src='/local-seo.svg' width={128} height={128} alt='Local SEO' />
                 <h3 className='fs-3 fw-bold pt-2 pb-2'>Local SEO</h3>
                 <p className='fs-6 text-secondary'>I've used some of the best SEO tools to index web application, website in the first page of Google search (Search Engine Result Page).</p>
               </div>
@@ -167,7 +168,7 @@ export default function Home() {
             </div>
           </form>
           <div className={`${styles.contactMeImage} col-sm-4 offset-sm-1`}>
-            <Image src='/contactMe.svg' width={500} height={500}></Image>
+            <Image src='/contactMe.svg' width={500} height={500} alt='Contact Me' />
           </div>
         </div>
 
