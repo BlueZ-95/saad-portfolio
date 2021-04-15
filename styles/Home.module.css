@@ -13,6 +13,10 @@
 	color: #714ade;
 }
 
+.headerContainer p {
+	cursor: pointer;
+}
+
 .mobileAvatarCol {
 	display: none;
 }
@@ -63,10 +67,6 @@
 }
 
 /* Contact me css */
-
-.contactMeContainer form {
-	border-radius: 20px;
-}
 
 .contactMeContainer > form,
 .contactMeContainer > footer {

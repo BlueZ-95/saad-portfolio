@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 import { FiInstagram, FiTwitter, FiGithub, FiLinkedin } from "react-icons/fi";
+import { FaCode, FaPaperPlane, FaDownload } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -27,7 +28,7 @@ export default function Home() {
                   <h4>Hey,</h4>
                   <h1 className='fw-bold'>I'm Saad</h1>
                   <p className={`${styles.headerPersonalInfo} fs-5`}>Freelancer <b>Web Developer</b> <br /> passionate in making beautiful <b>UI/UX</b> designs.</p>
-                  <button className='btn btn-primary btn-custom p-3 w-75 mt-4 mb-5 shadow-lg'>Hire Me</button>
+                  <a href='#contactMe' className='btn btn-primary btn-custom p-3 w-75 mt-4 mb-5 shadow-lg'>Hire Me</a>
                   <div className={`${styles.headerSocialLinks} col-sm-8 d-flex align-items-center justify-content-between`}>
                     <span>
                       <a href='https://www.instagram.com/i.am_saad_' target='blank'>
@@ -101,7 +102,7 @@ export default function Home() {
                     </p>
               </div>
             </div>
-            <a href='/SAAD PATEL RESUME.docx.pdf' className='btn btn-primary btn-custom p-3 w-50 mt-3 shadow' download>Download CV</a>
+            <a href='/SAAD PATEL RESUME.docx.pdf' className='btn btn-primary btn-custom p-3 col-sm-6 mt-5 shadow' download><span className='fs-5' style={{ marginRight: '20px' }}>Download CV</span><FaDownload /></a>
           </div>
           {/* </div> */}
         </div>
@@ -144,9 +145,9 @@ export default function Home() {
       </main>
 
       {/* Contact Me */}
-      <div className='container-fluid mt-5 pt-5'>
+      <div id='contactMe' className='container-fluid mt-5 pt-5'>
         <div className='row justify-content-center'>
-          <form className='col-sm-4 offset-sm-1 shadow-sm p-4 bg-white'>
+          <form className='col-sm-4 offset-sm-1 shadow p-4 bg-white' style={{ borderRadius: '20px' }}>
             <p className='fs-4 text-center fw-bold'>Contact me for any query</p>
             <div className="form-group p-3">
               <input type="text" className="form-control" id="name" placeholder="Your Name" required="" />
@@ -162,7 +163,7 @@ export default function Home() {
               <textarea className="form-control textarea-contact" rows="5" id="comment" name="FB" placeholder="Type Your Message Here..." required="" />
             </div>
             <div className="form-group p-3">
-              <button className='btn btn-primary btn-custom w-100 float-end mt-3 mb-2 p-3'>Send Message</button>
+              <button className='btn btn-primary btn-custom w-100 float-end mt-3 mb-2 p-3'><span className='fs-5' style={{ marginRight: '20px' }}>Send Message</span><FaPaperPlane /></button>
             </div>
           </form>
           <div className={`${styles.contactMeImage} col-sm-4 offset-sm-1`}>
