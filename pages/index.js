@@ -70,7 +70,7 @@ export default function Home() {
         <div className='row justify-content-center'>
           {/* <div className={`${styles.aboutMeContainer} col-sm-12`}> */}
           <div className={`${styles.aboutMeImage} col-sm-3 p-2`}>
-            <Image src='/../public/aboutMe.svg' width={128} height={128} layout='responsive' objectFit='fill' />
+            <Image src='/aboutMe.svg' width={128} height={128} layout='responsive' objectFit='fill' />
           </div>
           <div className='col-sm-5 offset-sm-1 pt-5'>
             <ul className="nav nav-pills mb-3 mt-4" id="pills-tab" role="tablist">
@@ -167,7 +167,7 @@ export default function Home() {
             </div>
           </form>
           <div className={`${styles.contactMeImage} col-sm-4 offset-sm-1`}>
-            <Image src='/../public/contactme.svg' width={500} height={500}></Image>
+            <Image src='/contactMe.svg' width={500} height={500}></Image>
           </div>
         </div>
 
