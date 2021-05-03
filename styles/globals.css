@@ -45,15 +45,42 @@ a:hover {
 }
 
 .btn-custom {
-	background-color: #714ade;
 	border: none;
-	border-radius: 12px;
-	/* padding: 0px; */
+	outline: none !important;
 	font-size: 1.2rem;
+	width: 250px;
+	height: 60px;
+	position: relative;
+	color: white;
+	background-color: #714ade;
+}
+
+.btn-custom:before {
+	position: absolute;
+	width: 250px;
+	height: 60px;
+	background-color: #2a136b;
+	left: 0;
+	top: 0;
 }
 
 .btn-custom:hover {
-	background-color: #583aad;
+	background-color: #714ade;
+	-webkit-animation-name: button-hover;
+	animation-name: button-hover;
+	-webkit-animation-duration: 0.3s;
+	animation-duration: 0.2s;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+	-webkit-animation-iteration-count: 1;
+	animation-iteration-count: 1;
+}
+
+@keyframes button-hover {
+	50% {
+		-webkit-transform: scale(.9);
+		transform: scale(.9);
+	}
 }
 
 .form-control:focus {

@@ -28,7 +28,7 @@ export default function Home() {
                 <div className=''>
                   <h4>Hey,</h4>
                   <h1 className='fw-bold'>I'm Saad</h1>
-                  <p className={`${styles.headerPersonalInfo} fs-5`}>Freelancer <b>Web Developer</b> <br /> passionate in making beautiful <b>UI/UX</b> designs.</p>
+                  <p className={`${styles.headerPersonalInfo} fs-5`}><b>Full Stack</b> Developer <br /> passionate in making beautiful <b>UI/UX</b> designs,<br />and awesome <b>Web Applications</b>.</p>
                   <a href='#contactMe' className='btn btn-primary btn-custom p-3 w-75 mt-4 mb-5 shadow-lg'>Hire Me</a>
                   <div className={`${styles.headerSocialLinks} col-sm-8 d-flex align-items-center justify-content-between`}>
                     <span>
