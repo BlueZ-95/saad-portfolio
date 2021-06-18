@@ -151,7 +151,7 @@ export default function Home() {
         {
           projects.map((project, index) => {
             return (
-              <div className="row d-flex my-5 mx-2 align-items-center justify-content-center shadow">
+              <div key={index} className="row d-flex my-5 mx-2 align-items-center justify-content-center shadow">
                 { 
                   index % 2 == 0 && 
                   <div className="col-sm-4 project-image float-end">
