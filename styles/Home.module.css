@@ -66,6 +66,15 @@
 	font-family: 'Dosis', sans-serif;
 }
 
+/* Projects css */
+.projectsContainer > div {
+	border-radius: 20px;
+}
+
+.projectsContainer  a {
+	background-color: #714ade;
+}
+
 /* Contact me css */
 
 .contactMeContainer > form,

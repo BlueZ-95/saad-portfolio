@@ -3,6 +3,7 @@ import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 import { FiInstagram, FiTwitter, FiGithub, FiLinkedin } from "react-icons/fi";
 import { FaPaperPlane, FaDownload } from "react-icons/fa";
+import projects from "../utilities/projects.js";
 
 export default function Home() {
   return (
@@ -144,6 +145,36 @@ export default function Home() {
           </div>
         </div>
       </main>
+
+      {/* Projects */}
+      <section className={`${styles.projectsContainer} container`}>
+        {
+          projects.map((project, index) => {
+            return (
+              <div className="row d-flex my-5 mx-2 align-items-center justify-content-center shadow">
+                { 
+                  index % 2 == 0 && 
+                  <div className="col-sm-4 project-image float-end">
+                    <Image src={"/Projects/" + project.projectImage} width={256} height={256} layout="responsive" />
+                  </div>
+                }
+                <div className="col-sm-7 project-description d-flex flex-column align-items-start justify-content-between">
+                  <h3 className="mb-3">{project.projectName}</h3>
+                  <p className="">{project.projectDescription}</p>
+                  <a href={project.projectURL} target="_blank" className="px-3 py-2 rounded text-white">View Project</a>
+                </div>
+                { 
+                  index % 2 == 1 && 
+                  <div className="col-sm-4 project-image float-end">
+                    <Image src={"/Projects/" + project.projectImage} width={256} height={256} layout="responsive" />
+                  </div>
+                }
+              </div>
+            )
+          })
+        }
+        
+      </section>
 
       {/* Contact Me */}
       <div id='contactMe' className='container-fluid mt-5 pt-5'>
