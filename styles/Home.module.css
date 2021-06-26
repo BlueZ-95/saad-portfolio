@@ -1,115 +1,114 @@
 /* Header Css */
 .headerContainer {
-	width: 100%;
-	height: 100vh;
-	min-height: 100vh;
-	background: url("../public/HeaderSVG.svg");
-	background-repeat: no-repeat;
-	background-position-x: right;
-	background-size: contain;
+  width: 100%;
+  height: 100vh;
+  min-height: 100vh;
+  background: url("../public/HeaderSVG.svg");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-size: contain;
 }
 
 .headerPersonalInfo b {
-	color: #714ade;
+  color: #714ade;
 }
 
 .headerContainer p {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 .mobileAvatarCol {
-	display: none;
+  display: none;
 }
 
 .mobileAvatarContainer {
-	height: 250px;
-	width: 250px;
-	border-radius: 50%;
-	background: url("../public/avatar.svg");
-	background-repeat: no-repeat;
-	background-position-x: right;
-	background-size: contain;
-	cursor: pointer;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  background: url("../public/avatar.svg");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-size: contain;
+  cursor: pointer;
 }
 
 .avatarContainer {
-	height: 500px;
-	width: 500px;
-	border-radius: 50%;
-	background: url("../public/avatar.svg");
-	background-repeat: no-repeat;
-	background-position-x: right;
-	background-size: contain;
-	cursor: pointer;
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  background: url("../public/avatar.svg");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-size: contain;
+  cursor: pointer;
 }
 
 /* main Content Css */
 .mainContainer {
-	background: url("../public/mainContentBG.svg");
-	background-repeat: no-repeat;
-	background-position-y: center;
-	background-size: contain;
-	padding-top: 10%;
+  background: url("../public/mainContentBG.svg");
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-size: contain;
+  padding-top: 10%;
 }
 
 .aboutMeDesc {
-	font-size: 1.2rem;
-	color: #495057;
-	padding-left: 5px;
+  font-size: 1.2rem;
+  color: #495057;
+  padding-left: 5px;
 }
 
 .skillsContainer > div {
-	border-radius: 20px !important;
-	height: 350px;
-	border: none;
-	cursor: pointer;
-	font-family: 'Dosis', sans-serif;
+  border-radius: 20px !important;
+  height: 350px;
+  border: none;
+  cursor: pointer;
+  font-family: "Dosis", sans-serif;
 }
 
 /* Projects css */
 .projectsContainer > div {
-	border-radius: 20px;
+  border-radius: 20px;
 }
 
-.projectsContainer  a {
-	background-color: #714ade;
+.projectsContainer a {
+  background-color: #714ade;
 }
-
 /* Contact me css */
 
 .contactMeContainer > form,
 .contactMeContainer > footer {
-	font-family: 'Dosis', sans-serif;
-	/* transform: scaleX(-1); */
+  font-family: "Dosis", sans-serif;
+  /* transform: scaleX(-1); */
 }
 
 @media (max-width: 767.98px) {
-	.headerContainer {
-		height: 50vh;
-	}
+  .headerContainer {
+    height: 50vh;
+  }
 
-	.avatarContainerCol,
-	.headerSocialLinks {
-		display: none !important;
-	}
+  .avatarContainerCol,
+  .headerSocialLinks {
+    display: none !important;
+  }
 
-	.mobileAvatarCol {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		padding-top: 0 !important;
-		padding-right: 20px !important;
-	}
+  .mobileAvatarCol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0 !important;
+    padding-right: 20px !important;
+  }
 
-	.mainContainer {
-		background: none;
-	}
+  .mainContainer {
+    background: none;
+  }
 
-	.skillsContainer {
-		background: #714ade;
-	}
+  .skillsContainer {
+    background: #714ade;
+  }
 
-	.contactMeImage {
-		display: none !important;
-	}
+  .contactMeImage {
+    display: none !important;
+  }
 }
